@@ -20,13 +20,13 @@ namespace WebService
         [WebMethod]
         public string HelloWorld()
         {
-            return "Hello World";
+            return "Hello From a SOAP Web Method";
         }
 
         [WebMethod]
         public string HelloWorldWithParams(string foo, bool yesno, int number)
         {
-            return string.Format("Hellow World {0} {1} {2}", foo, yesno.ToString(), number.ToString());
+            return string.Format("Hello From a SOAP Web Method { 0} {1} {2}", foo, yesno.ToString(), number.ToString());
         }
     }
 }

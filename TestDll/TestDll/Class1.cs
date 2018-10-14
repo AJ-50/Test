@@ -5,9 +5,9 @@ using System.Text;
 
 namespace TestDll
 {
-    public class WebService
+    public static class WebService
     {
-        public string HelloWorldMethod()
+        public static string HelloWorldMethod()
         {
             TestWebService.WebService T = new TestWebService.WebService();
 
