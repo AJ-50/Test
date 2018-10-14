@@ -7,5 +7,9 @@ namespace TestDll
 {
     public class Class1
     {
+        public string AStringMethod()
+        {
+            return "AString";
+        }
     }
 }
