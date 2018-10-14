@@ -5,11 +5,13 @@ using System.Text;
 
 namespace TestDll
 {
-    public class Class1
+    public class WebService
     {
-        public string AStringMethod()
+        public string HelloWorldMethod()
         {
-            return "AString";
+            TestWebService.WebService T = new TestWebService.WebService();
+
+            return T.HelloWorld();
         }
     }
 }
