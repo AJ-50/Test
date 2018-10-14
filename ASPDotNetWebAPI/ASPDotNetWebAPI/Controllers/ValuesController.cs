@@ -11,7 +11,11 @@ namespace ASPDotNetWebAPI.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        public string Get()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public string Get(string p1)
         {
             SoapWebReference.WebService S = new SoapWebReference.WebService();
 
@@ -25,9 +29,9 @@ namespace ASPDotNetWebAPI.Controllers
         }
 
         // POST api/values
-        public void Post([FromBody]string value)
-        {
-        }
+        //public void Post([FromBody]string value)
+        //{
+        //}
 
         // PUT api/values/5
         public void Put(int id, [FromBody]string value)
