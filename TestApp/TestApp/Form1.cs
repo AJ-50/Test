@@ -15,5 +15,15 @@ namespace TestApp
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TestDll.Class1 C = new TestDll.Class1();
+
+            string Test = C.AStringMethod();
+
+            MessageBox.Show("Test");
+
+        }
     }
 }
